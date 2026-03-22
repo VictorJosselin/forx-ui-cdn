@@ -1,4 +1,4 @@
-﻿/* forx-ui | JS bundle | 2026-03-22 */
+/* forx-ui | JS bundle | 2026-03-22 */
 
 /* -- theme.js -- */
 (function() {
@@ -177,34 +177,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.anim').forEach(function(el) { el.classList.add('visible'); });
   }
 });
-
-/* -- error.js -- */
-(function() {
-  var t = localStorage.getItem('theme404') || 'dark';
-  document.documentElement.setAttribute('data-theme', t);
-})();
-
-document.addEventListener('DOMContentLoaded', function() {
-  if (typeof lucide !== 'undefined') lucide.createIcons();
-
-  var btn  = document.getElementById('btn-theme');
-  var sun  = document.getElementById('icon-sun');
-  var moon = document.getElementById('icon-moon');
-  if (!btn) return;
-
-  function applyTheme(t) {
-    document.documentElement.setAttribute('data-theme', t);
-    localStorage.setItem('theme404', t);
-    sun.style.display  = t === 'light' ? 'flex' : 'none';
-    moon.style.display = t === 'dark'  ? 'flex' : 'none';
-  }
-
-  applyTheme(localStorage.getItem('theme404') || 'dark');
-
-  btn.addEventListener('click', function() {
-    var cur = document.documentElement.getAttribute('data-theme');
-    applyTheme(cur === 'dark' ? 'light' : 'dark');
-  });
-});
-
-
