@@ -1,4 +1,4 @@
-﻿/* forx-ui | CSS bundle | 2026-03-21 */
+﻿/* forx-ui | CSS bundle | 2026-03-22 */
 
 /* -- tokens.css -- */
 /* ── Tokens ─────────────────────────────────────────────── */
@@ -822,7 +822,6 @@ header {
 }
 .hero-text { position: relative; z-index: 1; min-width: 0; }
 .profile-wrap { position: relative; z-index: 1; flex-shrink: 0; width: 360px; }
-.profile-wrap { position: relative; z-index: 1; flex-shrink: 0; }
 .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
 .eyebrow-dot {
   width: 7px; height: 7px; border-radius: 50%;
